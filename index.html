@@ -15,16 +15,14 @@
 
 <body>
     <main class="container mx-auto">
-        <section class="mt-10 px-3 shadow-lg px-5 py-10 rounded-lg">
-            <!-- cart heading start -->
-            <div class="grid grid-cols-3 gap-8">
+        <section class="h-screen flex items-center justify-center">
+            <div class="grid grid-cols-3 gap-8 shadow-lg rounded-lg">
                 <!-- cart left  -->
-                <div class="col-span-2">
+                <div class="col-span-2 px-4">
                     <div class="py-5 flex justify-between border-b border-gray-300 font-medium">
                         <div class="text-2xl">
                             <h2>Shopping Cart</h2>
                         </div>
-                        <p class="text-xl">Item <span>3</span></p>
                     </div>
                     <!-- cart item heading start -->
                     <div class="grid grid-cols-2 gap-4 py-3">
@@ -48,16 +46,16 @@
                         </div>
                         <div class="flex justify-between items-center">
                             <div>
-                                <button>
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <input type="text" value="1" class="w-8 h-8 text-center border-dashed border border-indigo-500 rounded-lg mx-2">
-                                <button>
+                                <button class="text-red-500">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
+                                <input type="text" value="1" class="w-8 h-8 text-center border-dashed border border-indigo-500 rounded-lg mx-2 text-indigo-500">
+                                <button class="text-green-500">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
                             </div>
-                            <p>$<span>1219</span></p>
-                            <p>$<span>1219</span></p>
+                            <p class="text-indigo-500">$<span>1219</span></p>
+                            <p class="text-indigo-500">$<span>1219</span></p>
                         </div>
                     </div>
                     <!-- cart item end  -->
@@ -71,25 +69,43 @@
                         </div>
                         <div class="flex justify-between items-center">
                             <div>
-                                <button>
-                                    <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <input type="text" value="1" class="w-8 h-8 text-center border-dashed border border-indigo-500 rounded-lg mx-2">
-                                <button>
+                                <button class="text-red-500">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
+                                <input type="text" value="1" class="w-8 h-8 text-center border-dashed border border-indigo-500 rounded-lg mx-2 text-indigo-500">
+                                <button class="text-green-500">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
                             </div>
-                            <p>$<span>59</span></p>
-                            <p>$<span>59</span></p>
+                            <p class="text-indigo-500">$<span>59</span></p>
+                            <p class="text-indigo-500">$<span>59</span></p>
                         </div>
                     </div>
                     <!-- cart item end  -->
                 </div>
 
                 <!-- cart right  -->
-                <div class=" text-2xl font-medium">
-                    <div class="py-5 border-b border-gray-300">
+                <div style="height: 450px;" class="font-medium bg-gray-100 px-4">
+                    <div class="py-5 border-b border-gray-300 text-2xl">
                         <h2>Order Summary</h2>
+                    </div>
+                    <div class="text-xl flex justify-between my-5">
+                        <p>Items <span class="text-indigo-500">3</span></p>
+                        <p class="text-indigo-500">$<span>0</span></p>
+                    </div>
+                    <div class="text-xl my-5 w-100">
+                        <p>Promo Code</p>
+                        <input type="text" class="border border-indigo-300 my-2 rounded p-1 w-48" placeholder="Enter Promo Code">
+                        <button type="text" class="bg-indigo-400 px-6 py-1 rounded text-white my-1">APPLY</button>
+                    </div>
+                    <div class="text-xl">
+                        <div class="flex justify-between mt-5 w-100 border-t border-gray-300 py-3">
+                            <p>Total Cost</p>
+                            <p class="text-indigo-500">$<span>0</span></p>
+                        </div>
+                        <div class="flex justify-center w-full">
+                            <button type="text" class="bg-indigo-400 rounded text-white text-center w-full py-1">CHECKOUT</button>
+                        </div>
                     </div>
                 </div>
             </div>
